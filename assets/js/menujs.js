@@ -44,16 +44,16 @@
 
         if (settings.sticky === true) cssmenu.css('position', 'fixed');
 
-        resizeFix = function() {
-          if ($( window ).width() > 768) {
-            cssmenu.find('ul').show();
-          }
-          if ($(window).width() <= 768) {
-            cssmenu.find('ul').hide().removeClass('open');
-          }
-        };
-        resizeFix();
-        return $(window).on('resize', resizeFix);
+        // resizeFix = function() {
+        //   if ($( window ).width() > 768) {
+        //     cssmenu.find('ul').show();
+        //   }
+        //   if ($(window).width() <= 768) {
+        //     cssmenu.find('ul').hide().removeClass('open');
+        //   }
+        // };
+        // resizeFix();
+        // return $(window).on('resize', resizeFix);
       });
   };
 })(jQuery);
@@ -81,24 +81,24 @@ $(document).ready(function(){
 //   activeElement = $("#cssmenu > ul > li").first();
 // }
 
-defaultWidth = lineWidth = activeElement.width();
+// defaultWidth = lineWidth = activeElement.width();
 
 // defaultPosition = linePosition = activeElement.position().left;
 
-menuLine.css("width", lineWidth);
-menuLine.css("left", linePosition);
+// menuLine.css("width", lineWidth);
+// menuLine.css("left", linePosition);
 
-$("#cssmenu > ul > li").hover(function() {
-  activeElement = $(this);
-  lineWidth = activeElement.width();
-  linePosition = activeElement.position().left;
-  menuLine.css("width", lineWidth);
-  menuLine.css("left", linePosition);
-},
-function() {
-  menuLine.css("left", defaultPosition);
-  menuLine.css("width", defaultWidth);
-});
+// $("#cssmenu > ul > li").hover(function() {
+//   activeElement = $(this);
+//   lineWidth = activeElement.width();
+//   linePosition = activeElement.position().left;
+//   menuLine.css("width", lineWidth);
+//   menuLine.css("left", linePosition);
+// },
+// function() {
+//   menuLine.css("left", defaultPosition);
+//   menuLine.css("width", defaultWidth);
+// });
 
 });
 

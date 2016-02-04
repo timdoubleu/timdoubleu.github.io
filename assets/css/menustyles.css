@@ -5,8 +5,6 @@
 /*font-family: 'Lobster', cursive;*/
 
 
-
-
 /*playing with and orange gradient*/
 /*header h1 span {
   font-family: 'Sigmar One', cursive;
@@ -17,8 +15,13 @@
 
 header h1 {
   font-family: 'cookie', cursive;
-  font-size: 500%;
+  font-size: calc(3vw + 3vh + 2vmin);
   text-align: center;
+ /* font-size: 400%;
+  font-family: 'Sigmar One', cursive;
+  background: -webkit-radial-gradient(#FDC700, #840000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
 }
 
 #opentable {
