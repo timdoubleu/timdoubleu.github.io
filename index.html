@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bertolucci's Ristorante | Italian Cuisine</title>
+    <link rel="icon" type="icon" href="./assets/img/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tim Williams">
+    <meta name="description" content="Serving Fine Italian Cuisine Since 1928" >
+    <meta name="keywords" content="Bertolucci's, Bertolucci's Ristorante, sodini's, south san francisco">
+    <!-- styles -->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/menustyles.css" />
+    <style type="text/css">
+      header {
+        margin: 10% auto 0 auto;
+        width: 20%;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        padding-top: 10%;
+        padding-right: 3%;
+      }
+
+      #info a {
+        color:#F30F0F;
+        font-size:100%;
+        text-decoration: underline;
+      }
+
+      #info a:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      header ul {
+        display:inline-block;
+        /*margin: 5% auto;*/
+        margin-top: 5%;
+        margin-right: 5%;
+        vertical-align: top;
+      }
+      .hours {
+        /*text-decoration: bold;*/
+        font-weight: bold;
+        font-size: 150%;
+        text-decoration: underline;
+      }
+      .slideshow,
+      .slideshow:after {
+          height: 80%;
+      }
+      @media screen and (max-width: 700px) {
+        header {
+          width: 40%;
+        }
+      }
+    </style>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/custmodernizr.js"></script>
+    <script type="text/javascript" src="./assets/js/menujs.js"></script>
+</head>
+<body id="page">
+    <ul class="slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>Image 04</span></li>
+        <li><span>Image 05</span></li>
+        <li><span>Image 06</span></li>
+        <li><span>Image 07</span></li>
+    </ul>
+    <div class="container">
+        <nav id='cssmenu'>
+            <div class="logo"><a href="index.html">Bertolucci's Ristorante</a>
+            </div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+            <ul>
+                <li><a href='./index'>Home</a>
+                </li>
+                <li><a href='./history'>History</a>
+                </li>
+                <li><a href='./directions'>Direction's</a>
+                </li>
+                <li><a href='#'>Menu's</a>
+                    <ul>
+                        <li><a href='./lunchmenu'>Lunch</a>
+                        </li>
+                        <li><a href='./dinnermenu'>Dinner</a>
+                        </li>
+                        <li><a href='/dessertmenu'>Dessert</a>
+                        </li>
+                        <li><a href='./winemenu'>Wine</a>
+                    </ul>
+                </li>
+                <li><a href='#'>Banquet's</a>
+                    <ul>
+                        <li><a href='./lunchbanq'>Lunch Banquet</a>
+                        </li>
+                        <li><a href='./dinnerbanq'>Dinner Banquet</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+          <header>
+            <h1>A South San Francisco Landmark Serving Fine Italian Cuisine Since 1928</h1>
+            <h2><a target="_blank" href="https://www.google.com/maps/place/Bertolucci's/@37.6564892,-122.4103399,17z/data=!4m2!3m1!1s0x808f79a94d44f861:0x91c0f29cf7ff64cc">421 Cypress Ave, South San Francisco, 94080</a></h2>
+            <div>
+              <ul>
+                  <li class="hours">Lunch:</li>
+                  <li>Tuesday - Friday</li>
+                  <li>11:30AM - 2:00 PM</li>
+              </ul>
+              <ul>
+                  <li class="hours">Dinner:</li>
+                  <li>Tuesday - Sunday</li>
+                  <li>5:00PM - Close</li>
+              </ul>
+              <ul>
+                <li class="hours">Closed Mondays</li>
+              </ul>
+            </div>
+        </header>
+    </div>
+    <section id="info">
+      <div id="reserve">
+        <h2>Make A Reservation: </h2>
+        <div class="otw-shadow-light">
+            <div class="otw-widget-form-wrap">
+                <form action="http://www.opentable.com/restaurant-search.aspx" class="otw-widget-form" method="get" target="_blank">
+                    <div class="otw-wrapper">
+                        <div class="otw-date-wrap otw-input-wrap">
+                            <input autocomplete="off" class="otw-reservation-date" data-date-format="mm/dd/yyyy" id="date-otw_widget" name="startDate" type="text" value="">
+                        </div>
+                        <div class="otw-time-wrap otw-input-wrap">
+                            <select class="otw-reservation-time selectpicker" id="time-otw_widget-3" name="ResTime">
+                                <option value="12:00pm">
+                                    12:00 pm
+                                </option>
+                                <option value="12:30pm">
+                                    12:30 pm
+                                </option>
+                                <option value="1:00pm">
+                                    1:00 pm
+                                </option>
+                                <option value="1:30pm">
+                                    1:30 pm
+                                </option>
+                                <option value="2:00pm">
+                                    2:00 pm
+                                </option>
+                                <option value="2:30pm">
+                                    2:30 pm
+                                </option>
+                                <option value="3:00pm">
+                                    3:00 pm
+                                </option>
+                                <option value="3:30pm">
+                                    3:30 pm
+                                </option>
+                                <option value="4:00pm">
+                                    4:00 pm
+                                </option>
+                                <option value="4:30pm">
+                                    4:30 pm
+                                </option>
+                                <option value="5:00pm">
+                                    5:00 pm
+                                </option>
+                                <option value="5:30pm">
+                                    5:30 pm
+                                </option>
+                                <option value="6:00pm">
+                                    6:00 pm
+                                </option>
+                                <option value="6:30pm">
+                                    6:30 pm
+                                </option>
+                                <option selected="selected" value="7:00pm">
+                                    7:00 pm
+                                </option>
+                                <option value="7:30pm">
+                                    7:30 pm
+                                </option>
+                                <option value="8:00pm">
+                                    8:00 pm
+                                </option>
+                                <option value="8:30pm">
+                                    8:30 pm
+                                </option>
+                                <option value="9:00pm">
+                                    9:00 pm
+                                </option>
+                                <option value="9:30pm">
+                                    9:30 pm
+                                </option>
+                                <option value="10:00pm">
+                                    10:00 pm
+                                </option>
+                                <option value="10:30pm">
+                                    10:30 pm
+                                </option>
+                                <option value="11:00pm">
+                                    11:00 pm
+                                </option>
+                            </select>
+                        </div>
+                        <div class="otw-party-size-wrap otw-input-wrap">
+                            <select class="otw-party-size-select selectpicker" id="party-otw_widget-3" name="partySize">
+                                <option value="1">
+                                    1
+                                </option>
+                                <option value="2">
+                                    2
+                                </option>
+                                <option selected="selected" value="3">
+                                    3
+                                </option>
+                                <option value="4">
+                                    4
+                                </option>
+                                <option value="5">
+                                    5
+                                </option>
+                                <option value="6">
+                                    6
+                                </option>
+                                <option value="7">
+                                    7
+                                </option>
+                                <option value="8">
+                                    8
+                                </option>
+                                <option value="9">
+                                    9
+                                </option>
+                                <option value="10">
+                                    10
+                                </option>
+                                <option value="11">
+                                    11
+                                </option>
+                                <option value="12">
+                                    12
+                                </option>
+                                <option value="13">
+                                    13
+                                </option>
+                                <option value="14">
+                                    14
+                                </option>
+                                <option value="15">
+                                    15
+                                </option>
+                                <option value="16">
+                                    16
+                                </option>
+                                <option value="17">
+                                    17
+                                </option>
+                                <option value="18">
+                                    18
+                                </option>
+                                <option value="19">
+                                    19
+                                </option>
+                                <option value="20">
+                                    20
+                                </option>
+                                <option value="21">
+                                    21
+                                </option>
+                                <option value="22">
+                                    22
+                                </option>
+                                <option value="23">
+                                    23
+                                </option>
+                                <option value="24">
+                                    24
+                                </option>
+                            </select>
+                        </div>
+                        <div class="otw-button-wrap">
+                            <input class="otw-submit-btn" type="submit" value="Find a Table">
+                        </div><input class="RestaurantID" name="RestaurantID" type="hidden" value="24394"> <input class="rid" name="rid" type="hidden" value="24394"> <input class="GeoID" name="GeoID" type="hidden" value="0"> <input class="txtDateFormat" name="txtDateFormat" type="hidden" value="mm/dd/yyyy"> <input class="RestaurantReferralID" name="RestaurantReferralID" type="hidden" value="24394">
+                    </div>
+                </form>
+                <div class="powered-by-open-table">
+                    <span class="powered-by-text">Powered By: Opentable</span>
+                </div>
+            </div><!-- /.otw-widget-form-wrap -->
+        </div>
+      </div>
+      <div id="info-right">
+        <div id="events">
+          <h2>Events and Specials:</h2>
+          <p>February 14th: Valentines day event, blah blah, call for a reservation today!</p>
+        </div>
+        <div id="banq-text">
+          <p>"Walk ins" are always welcome at Bertolucci's! For reservation, please give us a call at 650-588-1625 or use the form above. For parties ranging from 25-100 people, please refer to our <a href="./lunchbanq">Luch Banquet</a> or <a href="./dinnerbanq">Dinner Banquet</a> page. Thank you and hope to see you soon at Bertolucci's!</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1;
+      var yyyy = today.getFullYear();
+      if(dd<10){
+          dd='0'+dd;
+      }
+      if(mm<10){
+          mm='0'+mm;
+      }
+      var today = mm+'/'+dd+'/'+yyyy;
+      // console.log(today);
+      document.getElementById('date-otw_widget').value = today;
+    </script>
+</body>
+</html>
