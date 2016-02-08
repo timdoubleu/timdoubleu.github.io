@@ -52,6 +52,7 @@ nav {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    z-index: 9999999;
 }
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -415,8 +416,6 @@ header {
     color:white;
 }
 
-
-
 header {
   margin: 10% auto 0 auto;
   width: 50%;
@@ -440,6 +439,7 @@ header {
 
 #info {
     /*color: ;*/
+    vertical-align: bottom;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -535,10 +535,18 @@ header {
 
 /*media query for not desktop*/
 @media screen and (max-width: 700px) {
+    .slideshow {
+        height: 100%;
+    }
     #info {
+        /*position: relative;*/
+        position: absolute;
+        bottom: -180px;
         height: auto;
     }
     #reserve {
+        /*position: absolute;*/
+        /*bottom: 0;*/
         border: none;
         border-bottom: 1px solid black;
         width: auto;
@@ -547,6 +555,7 @@ header {
     }
 
     #info-right {
+        /*margin-top: 50px;*/
         width: auto;
         display: block;
     }
