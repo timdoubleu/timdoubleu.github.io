@@ -540,13 +540,19 @@ header {
     }
     #reserve {
         border: none;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid black;
         width: auto;
         display: block;
+        margin-bottom: 10px;
     }
 
     #info-right {
         width: auto;
         display: block;
+    }
+    #events {
+        position: relative;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
     }
 }
