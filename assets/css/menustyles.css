@@ -52,7 +52,7 @@ nav {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 9999999;
+    /*z-index: 9999999;*/
 }
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -539,29 +539,30 @@ header {
         height: 100%;
     }
     #info {
-        /*position: relative;*/
         position: absolute;
-        bottom: -180px;
+        bottom: 0;
+        height: 20% !important;
+        overflow: visible !important;
         height: auto;
     }
     #reserve {
-        /*position: absolute;*/
-        /*bottom: 0;*/
+        background-color: #FFF;
         border: none;
         border-bottom: 1px solid black;
         width: auto;
         display: block;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
 
     #info-right {
-        /*margin-top: 50px;*/
         width: auto;
         display: block;
+        background-color: #FFF;
     }
     #events {
         position: relative;
         border-bottom: 1px solid black;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #FFF;
     }
 }
