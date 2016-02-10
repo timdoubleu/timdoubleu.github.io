@@ -442,8 +442,8 @@ header {
     vertical-align: bottom;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 20%;
+    width: 100vw;
+    height: 20vh;
     background: #fff;
 }
 
