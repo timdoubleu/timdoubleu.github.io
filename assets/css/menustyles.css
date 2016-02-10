@@ -576,8 +576,12 @@ header {
 }
 
 
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 685px) {
+    header {
+        padding-top: 5%;
+    }
     #info {
-        height: 27vh !important;
+        height: auto;
+        /*height: 27vh !important;*/
     }
 }
