@@ -50,7 +50,8 @@
       }
       .slideshow,
       .slideshow:after {
-          height: 80vh;
+        height: 100vh;
+          /* height: 80vh; */
           /*height: 80%;*/
       }
       @media screen and (max-width: 700px) {
@@ -58,11 +59,13 @@
           width: auto;
         }
       }
+
+      #din-time li{
+          text-align: right;
+      }
+
+
     </style>
-    <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/custmodernizr.js"></script>
-    <script type="text/javascript" src="./assets/js/menujs.js"></script>
 </head>
 <body id="page">
     <ul class="slideshow">
@@ -76,7 +79,7 @@
     </ul>
     <div class="container">
         <nav id='cssmenu'>
-            <div class="logo"><a href="index.html">Bertolucci's Ristorante</a>
+            <div class="logo"><a href="index.html">Bertolucci's <span id="logo-block">Ristorante</a>
             </div>
             <div id="head-mobile"></div>
             <div class="button"></div>
@@ -104,7 +107,6 @@
                         </li>
                         <li><a href='./dinnerbanq'>Dinner Banquet</a>
                         </li>
-
                 </li>
             </ul>
         </nav>
@@ -112,21 +114,22 @@
             <h1>A South San Francisco Landmark Serving Fine Italian Cuisine Since 1928</h1>
             <h2><a target="_blank" href="https://www.google.com/maps/place/Bertolucci's/@37.6564892,-122.4103399,17z/data=!4m2!3m1!1s0x808f79a94d44f861:0x91c0f29cf7ff64cc">421 Cypress Ave, South San Francisco, 94080</a></h2>
             <div>
+            <p>(650) 588 -1625</p>
               <ul>
                   <li class="hours">Lunch:</li>
-                  <li>Tuesday - Friday</li>
-                  <li>11:30AM - 2:00 PM</li>
+                  <li>Tuesday - Friday | 11:30 - 2:00</li>
               </ul>
-              <ul>
+              <ul id="#din-time">
                   <li class="hours">Dinner:</li>
-                  <li>Tuesday - Sunday</li>
-                  <li>5:00PM - Close</li>
-              </ul>
-              <ul>
-                <li class="hours">Closed Mondays</li>
+                  <li>Tue - Thu/Sun | 5:00 - 9:00</li>
+                  <li>Fri - Sat     | 5:00 - 10:00</li>
               </ul>
             </div>
         </header>
+    </div>
+    <div class="arrow-contain">
+        <div class="arrow-down"></div>
+        <p>Reservation's and Event's</p>
     </div>
     <section id="info">
       <div id="reserve">
@@ -308,6 +311,11 @@
         </div>
       </div>
     </section>
+    <!-- scripts -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+    <script src="assets/libs/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="./assets/js/custmodernizr.js"></script>
+    <script type="text/javascript" src="./assets/js/menujs.js"></script>
     <script type="text/javascript">
       var today = new Date();
       var dd = today.getDate();

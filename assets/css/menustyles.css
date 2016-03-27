@@ -1,5 +1,6 @@
 /*logo text font*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Marcellus);
 
 * {
     margin: 0;
@@ -19,19 +20,23 @@ header {
     position: relative;
     z-index: 123;
     /*padding: 10px;*/
-    padding: 10px 10px 10px 50px;
+    padding: 10px 8% 10px 10px;
     /*font-size: 20px;*/
     text-transform: uppercase;
     /*font: 18px verdana;*/
-    font: 20px 'Open Sans Condensed', sans-serif;
+    /* font: 2.5em 'Open Sans Condensed', sans-serif; */
+    font: 2.5em 'Marcellus', serif;
     font-weight: bold;
-    color: #6DDB07;
-    float: left;
+    float: right;
     /*width: 15%;*/
 }
 .logo a {
     color: #6B0000;
-    /*color: #6DDB07;*/
+}
+#logo-block {
+    display: block;
+    text-decoration: underline;
+    padding-left: 15%;
 }
 nav {
     position: relative;
@@ -39,6 +44,11 @@ nav {
     margin: 0 auto;
     background: rgba(255,255,255,0.6);
 }
+
+#cssmenu > ul > li{
+    margin-top:2.5%;
+}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -208,6 +218,10 @@ nav {
     border-top: 1px solid #333;
 }
 @media screen and (max-width: 700px) {
+    #logo-block {
+        /* display:inline-block; */
+        /* padding-left:0%; */
+    }
     .logo {
         position: absolute;
         top: 0;
@@ -215,8 +229,9 @@ nav {
         width: 100%;
         height: 46px;
         text-align: center;
-        padding: 10px 0 0 0;
+        padding: 0;
         float: none;
+        font-size:1em;
     }
     .logo2 {
         display: none;
@@ -226,6 +241,7 @@ nav {
     }
     #cssmenu {
         width: 100%;
+        /* height:60px; */
     }
     #cssmenu ul {
         width: 100%;
@@ -439,12 +455,13 @@ header {
 
 #info {
     /*color: ;*/
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 20vh;
-    background: #fff;
+    top: 100vh;
+    /* width: 100vw; */
+    /* height: 20vh; */
+    background: rgba(255,255,255,0.6);
+    /* background: #fff; */
 }
 
 #reserve {
@@ -457,9 +474,18 @@ header {
     /*vertical-align: center;*/
     /*display: table;*/
 }
-#reserve select {
+
+/* #reserve select {
     width: 190px;
+} */
+
+#reserve input, #reserve select {
+    width:60%;
+    text-align:center;
+    /* margin-left:5%; */
+    /* margin-right:5%; */
 }
+
 #info h2 {
     font-size: 140%;
     text-transform: uppercase;
@@ -508,7 +534,7 @@ header {
 /*media query for desktop*/
 @media screen and (min-width: 700px) {
   #cssmenu ul {
-    float:right;
+    /* float:right; */
   }
 
   #cssmenu ul li {
@@ -582,6 +608,25 @@ header {
     }
     #info {
         height: auto;
-        /*height: 27vh !important;*/
     }
+}
+
+.arrow-contain {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    margin-left: -10%;
+    color: #fff;
+}
+.arrow-down {
+    height:0px;
+    width:0px;
+    border:none;
+    border-top:10px solid #fff;
+    border-left:10px solid rgba(0,0,0,0);
+    border-right:10px solid rgba(0,0,0,0);
+    display: inline-block;
+}
+.arrow-contain p {
+    display:inline-block;
 }
