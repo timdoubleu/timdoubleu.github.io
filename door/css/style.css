@@ -35,7 +35,7 @@ html, body {
   /*background-image: url();*/
   /*background-image: url("../imgs/bar.jpeg");*/
   background-image: url("https://static.pexels.com/photos/27895/pexels-photo-27895.jpg");
-  background-size: contain;
+  background-size: cover;
   /*background-color: #cccccc;*/
 }
 .container
