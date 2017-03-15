@@ -1,0 +1,114 @@
+body
+{
+  background-color:#f0f0f0;
+}
+
+p {
+  color:white;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#backdrop {
+  min-height: 100%;
+  background-color: red;
+}
+
+#doors {
+  position: absolute;
+  bottom: 0 ;
+  left: 50%;
+  margin-left: -147px;
+}
+
+#background-vid {
+  height: 274px;
+  width: 294px;
+  /*background-color: green;*/
+  position: absolute;
+  bottom: 0 ;
+  left: 50%;
+  margin-left: -147px;
+  /*background-image: url();*/
+  /*background-image: url("../imgs/bar.jpeg");*/
+  background-image: url("https://static.pexels.com/photos/27895/pexels-photo-27895.jpg");
+  background-size: contain;
+  /*background-color: #cccccc;*/
+}
+.container
+{
+  margin:0 auto;
+  width:90%;
+}
+.perspective
+{
+  /*background: url("../imgs/doorBorder.png");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: inline;
+  float: left;
+  height: 274px;
+  width: 147px;
+  margin-top: 20px;
+  margin-bottom: : 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-perspective: 450;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+  .thumb
+  {
+      /*background: url("../imgs/ClassDoor.png");*/
+
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 147px;
+      height: 274px;
+      position: absolute;
+      box-sizing: border-box;
+      border-radius: 3px;
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+      transition: 1s transform linear;
+      transform-origin: left;
+      cursor: pointer;
+  }
+
+  .thumbOpenedLeft
+  {
+      transform: rotateY(-90deg);
+      transform-origin: 8px;
+      transition: .5s linear;
+  }
+
+  .thumbRight
+  {
+      /*background: url("../imgs/ClassDoor.png");*/
+      /*text-align: right;*/
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 147px;
+      height: 274px;
+      position: absolute;
+      box-sizing: border-box;
+      border-radius: 3px;
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+      transition: 1s transform linear;
+      transform-origin: right;
+      cursor: pointer;
+  }
+
+  .thumbOpenedRight
+  {
+      transform: rotateY(90deg);
+      /*transform-origin: 8px right;*/
+      /*transform-origin: right top;*/
+      transform-origin: right -8px;
+      transition: .5s linear;
+  }
