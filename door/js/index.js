@@ -1,4 +1,4 @@
-$('#doors').on('click', function() {
+$('#doors .perspective').on('click', function() {
   console.log("clicked the doors");
   var leftThis = $('#left-door');
   var rightThis = $('#right-door');
@@ -32,8 +32,8 @@ function openDoorRight(field) {
 }
 
 var passMap = {
-  'investor' : 'about.html',
-  'buyer' : 'index.html',
+  'investor' : 'about',
+  'buyer' : '',
   'pass3' : 'location3',
   'pass4' : 'location4'
 };
@@ -44,6 +44,8 @@ $('#secret').on('keydown', function(event) {
     var destination = passMap[inputVal];
 
     if (destination) {
+      $('#msg').html("Welcome to Paul Hardt..");
+      $('#msg').css('color', 'green');
       // console.log("Got password " + inputVal + " sending to location: " + destination);
       var leftThis = $('#left-door');
       var rightThis = $('#right-door');
@@ -56,12 +58,41 @@ $('#secret').on('keydown', function(event) {
 
         // similar behavior as clicking on a link
         // window.location.href = '../'+destination;
-        $(location).attr('href', '../'+destination);
+        $(location).attr('href', '/'+destination);
       }, 1500);
     } else {
-      //give them an error message? or maybe just link them to the index page.
       console.log("No destination for that password");
+      $('#msg').html("I'm sorry there's no destination for that phrase");
+      $('#msg').css('color', 'red');
     }
+  }
+});
+
+$('#submit-secret').on('click', function () {
+  var inputVal = $('#secret').val();
+  var destination = passMap[inputVal];
+
+  if (destination) {
+    $('#msg').html("Welcome to Paul Hardt..");
+    $('#msg').css('color', 'green');
+    // console.log("Got password " + inputVal + " sending to location: " + destination);
+    var leftThis = $('#left-door');
+    var rightThis = $('#right-door');
+    openDoorLeft(leftThis);
+    openDoorRight(rightThis);
+
+    setTimeout(function() {
+      // similar behavior as an HTTP redirect
+      // window.location.replace('../'+destination);
+
+      // similar behavior as clicking on a link
+      // window.location.href = '../'+destination;
+      $(location).attr('href', '/'+destination);
+    }, 1500);
+  } else {
+    console.log("No destination for that password");
+    $('#msg').html("I'm sorry there's no destination for that phrase");
+    $('#msg').css('color', 'red');
   }
 });
 
