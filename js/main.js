@@ -1,5 +1,5 @@
 $('document').ready(function() {
-	console.log("in here");
+	// console.log("in here");
   $('body').scrollTop(0);
 });
 

@@ -1,0 +1,163 @@
+body
+{
+  background-color:#f0f0f0;
+}
+
+p {
+  color:white;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#backdrop {
+  min-height: 100%;
+  background-color: red;
+  /*background-image: url("../imgs/door.jpg");*/
+  background-image: url("../imgs/stonewall.jpg");
+
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+
+  /*background-size: contain;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+}
+
+#doors {
+  position: absolute;
+  bottom: 0 ;
+  left: 50%;
+  margin-left: -215px;
+}
+
+#background-vid {
+  height: 500px;
+  width: 430px;
+  /*background-color: green;*/
+  position: absolute;
+  bottom: 0 ;
+  left: 50%;
+  margin-left: -215px;
+  background-image: url("../imgs/bar.jpg");
+  background-size: cover;
+
+  /*background-image: url();*/
+
+  /*background-image: url("https://static.pexels.com/photos/27895/pexels-photo-27895.jpg");*/
+  /*background-color: #cccccc;*/
+}
+.container
+{
+  margin:0 auto;
+  width:90%;
+}
+.perspective
+{
+  /*background: url("../imgs/doorBorder.png");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: inline;
+  float: left;
+  height: 500px;
+  width: 215px;
+  margin-top: 20px;
+  margin-bottom: : 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-perspective: 450;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+  .thumb
+  {
+      background: url("../imgs/LeftDoor.jpg");
+      background-size: cover;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 500px;
+      width: 215px;
+      position: absolute;
+      box-sizing: border-box;
+      border-radius: 3px;
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+      transition: 1s transform linear;
+      transform-origin: left;
+      cursor: pointer;
+  }
+
+  .thumbOpenedLeft
+  {
+      transform: rotateY(-90deg);
+      transform-origin: 8px;
+      transition: .5s linear;
+  }
+
+  .thumbRight
+  {
+      background: url("../imgs/RightDoor.jpg");
+      background-size: cover;
+      /*text-align: right;*/
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 500px;
+      width: 215px;
+
+      position: absolute;
+      box-sizing: border-box;
+      border-radius: 3px;
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+      transition: 1s transform linear;
+      transform-origin: right;
+      cursor: pointer;
+  }
+
+  .thumbOpenedRight
+  {
+      transform: rotateY(90deg);
+      /*transform-origin: 8px right;*/
+      /*transform-origin: right top;*/
+      transform-origin: right -8px;
+      transition: .5s linear;
+  }
+
+
+/*Input styles*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #afafaf;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #969696;
+}
+
+#pass-input {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
