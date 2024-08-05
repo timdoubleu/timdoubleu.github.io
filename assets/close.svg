@@ -1,0 +1,31 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="9.651"
+  height="9.651"
+  viewBox="0 0 9.651 9.651">
+  <g
+    id="Group_55"
+    data-name="Group 55"
+    transform="translate(-1260.086 -262.086)">
+    <line
+      id="Line_314"
+      data-name="Line 314"
+      x2="6.823"
+      y2="6.823"
+      transform="translate(1261.5 263.5)"
+      fill="none"
+      stroke="#000"
+      stroke-linecap="round"
+      stroke-width="1" />
+    <line
+      id="Line_315"
+      data-name="Line 315"
+      y1="6.823"
+      x2="6.823"
+      transform="translate(1261.5 263.5)"
+      fill="none"
+      stroke="#000"
+      stroke-linecap="round"
+      stroke-width="1" />
+  </g>
+</svg>
